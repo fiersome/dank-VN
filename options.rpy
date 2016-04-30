@@ -112,6 +112,7 @@ init -1 python hide:
     ## and padding.
 
     # style.window.yminimum = 250
+    style.say_vbox.xfill = True
 
 
     #########################################

@@ -6,9 +6,21 @@
 # Declare characters used by this game.
 
 # Main cast
+define narrator = Character(None,
+                          
+                          what_size=20, #Font size
+                          what_xalign=0.5, #Centers text within the window
+                          window_xalign=0.5, #Centers the window horizontally
+                          window_yalign=0.5, #Centers the window vertically
+                          what_text_align=0.5, #Centers text within the window, just in case
+                          window_background=None,#Removes the window, so only the text shows
+                          window_ymaximum=300,
+                          what_outlines=[(3, "#000000", 2, 2), (3, "#808080", 0, 0)],
+                          #Gives an outline
+                          what_slow_cps=30 #Speed at which the text appears (slow)
+                          )
 define mc_inner = Character(what_suffix = ' ▼', what_slow_cps=30)
-define narrator = Character(what_suffix = ' ▼', what_slow_cps=30)
-define mc = Character('{b}Boy{/b}', color="#FFFFFF",  what_suffix = ' ▼', show_two_window = True, what_slow_cps=30)
+define mc = Character('{b}Seven{/b}', color="#FFFFFF",  what_suffix = ' ▼', show_two_window = True, what_slow_cps=30)
 define nando = Character('{b}Nando{/b}', color="#FFFFFF",  what_suffix = ' ▼', show_two_window = True, what_slow_cps=30)
 define rosa =  Character('{b}Rosa{/b}', color="#FFFFFF",  what_suffix = ' ▼', show_two_window = True, what_slow_cps=30)
 
@@ -27,6 +39,7 @@ define girlAB = Character('{b}Female Student A & B{/b}', color="#FFFFFF",  what_
 define mechanics =  Character('{b}Mechanics{/b}', color="#FFFFFF",  what_suffix = ' ▼', show_two_window = True, what_slow_cps=30)
 
 #??? character
+define mc_unrevealed = Character('{b}Boy{/b}', color="#FFFFFF",  what_suffix = ' ▼', show_two_window = True, what_slow_cps=30)
 define oldMan = Character('{b}Old Man{/b}', color="#FFFFFF",  what_suffix = ' ▼', show_two_window = True, what_slow_cps=30)
 define flashyGuy = Character('{b}Flashy Guy{/b}', color="#FFFFFF",  what_suffix = ' ▼', show_two_window = True, what_slow_cps=30)
 define highSG = Character('{b}High-Spirited Girl{/b}', color="#FFFFFF",  what_suffix = ' ▼', show_two_window = True, what_slow_cps=30)
